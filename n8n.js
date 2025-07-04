@@ -4,12 +4,13 @@ let htmlContent = "";
 
 const aiSummary = body?.summarize_data?.summary || "No AI summary available";
 
-if (body?.repository_summary && body?.commit_summary) {
+if (body?.repository_summary && body?.commit_summary && body?.summarize_data) {
   const repoSummary = body.repository_summary;
   const commitSummary = body.commit_summary;
+  const repoData = body.summarize_data.repository_data;
 
   htmlContent = `
-    <h2>Krita Repository Analysis</h2>
+    <h2>${repoData.name} Repository Analysis</h2>
     <hr>
     <h3>Repository Summary</h3>
     <pre style="white-space: pre-wrap; word-wrap: break-word; font-family: monospace; background-color: #f4f4f4; padding: 15px; border-radius: 5px;">${repoSummary}</pre>
