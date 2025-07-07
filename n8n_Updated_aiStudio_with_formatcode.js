@@ -104,6 +104,11 @@ if (body?.summarize_data?.repository_data) {
       ${formatSummaryToHtml(repoSummary, "No operational summary available.")}
     </div>
     
+
+
+
+
+    
     <h3>Team Progress & Development Rhythm</h3>
     <div class="summary-container" style="background-color: #f7f7f9; border: 1px solid #e1e1e8; padding: 15px; border-radius: 5px;">
       ${formatSummaryToHtml(commitSummary, "No commit summary available.")}
