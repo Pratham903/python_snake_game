@@ -1,4 +1,4 @@
-// Timepass JS code: Simple timer that logs time every second
+
 let seconds = 0;
 setInterval(() => {
   seconds++;
