@@ -216,6 +216,3 @@ return [
 
 
 
-
-// This code processes the input data and generates an HTML summary based on the type of event received (repository data, commit data, pull request, or issue).
-// It formats the data into a structured HTML format, including repository details, contributors, languages used
